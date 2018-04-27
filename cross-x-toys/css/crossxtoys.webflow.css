@@ -1,0 +1,668 @@
+body {
+  background-color: #f3f3f5;
+  font-family: 'PT Serif', serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3em;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body-wrapper {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url('../images/totem-background.jpg');
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
+.topbar {
+  position: relative;
+  z-index: 1;
+  padding: 6px 12px 11px;
+  background-color: #fff;
+  box-shadow: 0 -32px 50px 20px #e3ded5;
+}
+
+.main-content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 89px;
+}
+
+.sidebar {
+  position: relative;
+  z-index: 2;
+  width: 151px;
+  margin-top: 30px;
+  margin-bottom: 49px;
+  padding-top: 6px;
+  padding-bottom: 21px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 50px 100px -5px #e4dfd5;
+}
+
+.sidebar.is-right {
+  left: auto;
+  right: 0px;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.sidebar-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 110px;
+}
+
+.totem {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+
+.totem__element {
+  position: relative;
+  width: 36%;
+  height: 21%;
+  min-height: 20px;
+  background-image: url('../images/elementy-na-totemie-w-kadrze.png');
+  background-position: 50% 20%;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.totem__element.is-krew {
+  position: relative;
+  height: 10%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  background-position: 50% 2%;
+}
+
+.totem__element.is-hidden {
+  display: none;
+}
+
+.totem__element.is-pot {
+  height: 12%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  background-position: 50% 8%;
+}
+
+.totem__element.is-twardosc {
+  height: 15.5%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  background-position: 50% -93%;
+}
+
+.totem__element.is-szorstkosc {
+  height: 17.5%;
+  margin-top: -1%;
+  background-position: 50% 21%;
+}
+
+.totem__element.is-obojetnosc {
+  height: 12%;
+  margin-bottom: -2%;
+  background-position: 50% 38%;
+}
+
+.totem__element.is-starosc {
+  height: 15%;
+  margin-top: -2%;
+  background-position: 50% 44%;
+}
+
+.totem__element.is-konfliktowosc {
+  height: 19%;
+  margin-top: -1%;
+  margin-bottom: -2%;
+  background-position: 50% 30%;
+}
+
+.totem__element.s-serdecznosc {
+  height: 12%;
+  margin-top: -1%;
+  margin-bottom: -3%;
+  background-position: 50% 52%;
+}
+
+.totem__element.is-energicznosc {
+  height: 19%;
+  margin-bottom: -2.5%;
+  background-position: 50% 60%;
+}
+
+.totem__element.is-mlodosc {
+  height: 19%;
+  margin-bottom: -3%;
+  background-position: 50% 70%;
+}
+
+.totem__element.is-uleglosc {
+  height: 15%;
+  margin-top: -2%;
+  margin-bottom: -1%;
+  background-position: 50% 79%;
+}
+
+.totem__element.is-lzy {
+  height: 9%;
+  margin-bottom: -1%;
+  background-position: 50% 84%;
+}
+
+.totem__element.is-wlosy {
+  height: 9%;
+  margin-top: -1%;
+  margin-bottom: -2%;
+  background-position: 50% 89%;
+}
+
+.totem__element.is-delikatnosc {
+  height: 18%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  background-position: 50% 98%;
+}
+
+.totem__stick {
+  position: relative;
+  display: inline-block;
+}
+
+.totem__inner {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.totem__elements {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1%;
+  padding-bottom: 16%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.topbar__logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: #333;
+  text-align: left;
+}
+
+.topbar__logo-header {
+  font-size: 24px;
+}
+
+.sidebar-element__item {
+  width: 100%;
+  min-height: 20px;
+  padding: 15px 6px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-element__item:active {
+  background-color: #e9e9e9;
+}
+
+.sidebar-element__item.is-hidden {
+  display: none;
+}
+
+.sidebar-element__item-image {
+  width: 50px;
+  height: 53px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/krew2x.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sidebar-element__item-image.for-lzy {
+  background-image: url('../images/lzy2x.png');
+}
+
+.sidebar-element__item-image.for-wlosy {
+  background-image: url('../images/wlosy2x.png');
+}
+
+.sidebar-element__item-image.for-serdecznosc {
+  background-image: url('../images/serdecznosc2x.png');
+}
+
+.sidebar-element__item-image.for-energicznosc {
+  background-image: url('../images/energicznosc2x.png');
+}
+
+.sidebar-element__item-image.for-mlodosc {
+  background-image: url('../images/mlodosc2x.png');
+}
+
+.sidebar-element__item-image.for-uleglosc {
+  background-image: url('../images/uleglosc2x.png');
+}
+
+.sidebar-element__item-image.for-delikatnosc {
+  background-image: url('../images/delikatnosc2x.png');
+}
+
+.sidebar-element__item-image.for-pot {
+  background-image: url('../images/pot2x.png');
+}
+
+.sidebar-element__item-image.for-starosc {
+  background-image: url('../images/starosc2x.png');
+}
+
+.sidebar-element__item-image.for-szorstkosc {
+  background-image: url('../images/szorstkosc2x.png');
+}
+
+.sidebar-element__item-image.for-konfliktowosc {
+  background-image: url('../images/konfliktowosc2x.png');
+}
+
+.sidebar-element__item-image.for-twardosc {
+  background-image: url('../images/twardosc2x.png');
+}
+
+.sidebar-element__item-image.for-obojetnosc {
+  background-image: url('../images/obojetnosc2x.png');
+}
+
+.sidebar-element__item-text {
+  padding-top: 9px;
+  font-family: 'Open Sans', sans-serif;
+  color: #424242;
+  font-size: 13px;
+  line-height: 1em;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.modal-wrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  overflow: auto;
+  height: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-color: rgba(58, 58, 58, .22);
+}
+
+.modal-wrapper.is-hidden {
+  display: none;
+}
+
+.modal {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.modal.is-hidden {
+  display: none;
+}
+
+.modal__window {
+  display: block;
+  max-width: 600px;
+  min-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.modal__header-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 29px;
+  line-height: 1.3em;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.modal__image-holder {
+  position: relative;
+  padding-top: 18px;
+}
+
+.modal__texts {
+  display: block;
+  max-width: 330px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.modal__textparagraph {
+  text-align: center;
+}
+
+.bem-button {
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bem-button.is-secondary {
+  background-color: #ccc;
+  color: #000;
+}
+
+.bem-button.is-ghost {
+  padding-right: 12px;
+  padding-left: 12px;
+  border-color: #333;
+  background-color: transparent;
+  color: #333;
+}
+
+.bem-button.is-ghost:active {
+  background-color: #333;
+  color: #fff;
+}
+
+.bem-button.is-cta-in-topbar {
+  width: 100%;
+  padding: 6px 12px 7px;
+  background-color: #2a2a2a;
+}
+
+.modal-buttons__holder {
+  margin-top: 8px;
+}
+
+.body {
+  height: 100%;
+}
+
+.totem-img {
+  margin-top: -122px;
+}
+
+.totem__background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('../images/totem-background.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.totem-stick-image {
+  display: block;
+  max-height: 77vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sidebar__title {
+  margin-bottom: 9px;
+  font-family: 'Open Sans', sans-serif;
+  color: #b4b4b4;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.sidebar__title-text {
+  padding-top: 7px;
+}
+
+.left-sidebar-holder {
+  float: left;
+}
+
+.right-sidebar-holder {
+  float: right;
+}
+
+.topbar__left-side {
+  float: left;
+}
+
+.topbar__right-side {
+  float: right;
+}
+
+.topbar__cta-buttonholder {
+  padding-top: 10px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 10px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+}
+
+.footer__signature {
+  padding-bottom: 10px;
+  color: #b6b3b0;
+  font-size: 12px;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.footer__designer-link {
+  color: #b6b3b0;
+}
+
+.body-wrapper__inner {
+  position: relative;
+  min-height: 100%;
+}
+
+.modal__image {
+  height: 100px;
+  background-image: url('../images/elementy-na-totemie-w-kadrze.png');
+  background-position: 50% 50%;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.modal__image.is-lzy {
+  height: 54px;
+  margin: auto;
+  background-position: 50% 84%;
+}
+
+.modal__image.is-wlosy {
+  height: 78px;
+  background-position: 50% 89%;
+  background-size: 270px;
+}
+
+.modal__image.is-serdecznosc {
+  background-position: 50% 52%;
+}
+
+.modal__image.is-zgrabnosc {
+  height: 137px;
+  background-position: 50% 60%;
+}
+
+.modal__image.is-mlodosc {
+  height: 116px;
+  background-position: 50% 70%;
+}
+
+.modal__image.is-uleglosc {
+  background-position: 50% 79%;
+}
+
+.modal__image.is-delikatnosc {
+  background-position: 50% 98%;
+}
+
+.modal__image.is-krew {
+  background-position: 50% 0%;
+}
+
+.modal__image.is-pot {
+  height: 94px;
+  background-position: 50% 7%;
+}
+
+.modal__image.is-starosc {
+  background-position: 50% 44%;
+}
+
+.modal__image.is-twardosc {
+  background-position: 50% 13%;
+}
+
+.modal__image.is-szorstkosc {
+  background-position: 50% 21%;
+}
+
+.modal__image.is-konfliktowosc {
+  background-position: 50% 30%;
+}
+
+.modal__image.is-obojetnosc {
+  height: 82px;
+  background-position: 50% 38%;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 176px;
+  }
+  .sidebar-element__item-text {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sidebar {
+    width: 58px;
+  }
+  .topbar__logo {
+    text-align: center;
+  }
+  .sidebar-element__item {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .sidebar-element__item-image {
+    width: 26px;
+  }
+  .sidebar-element__item-text {
+    display: none;
+    padding-top: 4px;
+  }
+  .bem-button.is-ghost.is-cta-in-topbar {
+    padding: 5px 7px;
+  }
+  .bem-button.is-cta-in-topbar {
+    padding: 1px 8px 2px;
+    border-radius: 0px;
+    font-size: 13px;
+  }
+  .sidebar__title-text {
+    font-size: 10px;
+    letter-spacing: -0.02em;
+  }
+  .topbar__left-side {
+    float: none;
+  }
+  .topbar__right-side {
+    margin-right: -13px;
+    margin-bottom: -12px;
+    margin-left: -13px;
+    float: none;
+    text-align: center;
+  }
+  .topbar__cta-buttonholder {
+    display: block;
+    padding-top: 8px;
+  }
+}
+
