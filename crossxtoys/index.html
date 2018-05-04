@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Apr 27 2018 07:41:18 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri May 04 2018 21:47:22 GMT+0000 (UTC)  -->
 <html data-wf-page="5adf81b1797d074f105a867c" data-wf-site="5adf81b1797d0711a85a867b">
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
 </head>
 <body class="body">
   <div class="body-wrapper">
-    <div class="body-wrapper__inner w-clearfix">
+    <div class="body-wrapper__inner">
       <div class="topbar w-clearfix">
         <div class="topbar__left-side">
           <a href="index.html" class="topbar__logo w-inline-block">
@@ -29,110 +29,139 @@
           </a>
         </div>
         <div class="topbar__right-side">
-          <a href="https://polakpotrafi.pl/projekt/new-york-design-week-crossxtoys" class="topbar__cta-buttonholder w-inline-block">
+          <div class="bem-nav-tabs">
+            <div class="bem-nav-tabs__button-holder">
+              <div action-set-nav-tab="about" class="bem-nav-tabs__button is-current">
+                <div class="bem-nav-tabs__tab-text">O projekcie</div>
+              </div>
+            </div>
+            <div class="bem-nav-tabs__button-holder">
+              <div action-set-nav-tab="create-totem" class="bem-nav-tabs__button">
+                <div class="bem-nav-tabs__tab-text">Stwórz totem</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://polakpotrafi.pl/projekt/new-york-design-week-crossxtoys" class="topbar__cta-buttonholder is-hidden w-inline-block">
             <div class="bem-button is-cta-in-topbar">Wesprzyj na PolakPotrafi.pl</div>
           </a>
         </div>
       </div>
-      <div class="left-sidebar-holder">
-        <div class="sidebar">
-          <div class="sidebar__title">
-            <div class="sidebar__title-text">Kobieta</div>
-          </div>
-          <div class="sidebar-elements w-clearfix">
-            <div action-show-element-details="lzy" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-lzy"></div>
-              <div class="sidebar-element__item-text">Łzy</div>
+      <div tab-id="about" class="about w-clearfix">
+        <div class="about__image"><img src="images/dbc10848c4b4a3c67cc43972c28afb67-1.png" class="about__image-proportions-maker"></div>
+        <div class="about__description">
+          <div class="about__inner">
+            <div class="about__description-text">
+              <div class="about__description-paragraph"><span class="bem-inline-mini-logo">CROSSxTOYS </span>to zestaw 20 elementów – klocków, za pomocą których możemy złożyć totemy symbolizujące kobietę oraz mężczyznę. Totem żeński budujemy wybierając klocki wykonane z miękkich, kruchych i elastycznych materiałów; totem męski konstruujemy natomiast z elementów szorstkich, ostrych i twardych. </div>
+              <div class="about__description-paragraph">Końcowym etapem korzystania z zestawu jest zbudowanie własnego wizerunku. W tym celu musimy posłużyć się elementami, które uprzednio przypisaliśmy kobiecie oraz mężczyźnie. </div>
+              <div class="about__description-paragraph">Ten moment jest dla użytkowniczek i użytkowników zestawu kluczowym, ponieważ stanowi dowód na to, że narzucane nam odgórnie podziały nie znajdują odzwierciedlenia w rzeczywistości. Żadne z nas nie nosi w sobie cech stuprocentowo żeńskich czy stuprocentowo męskich.</div>
             </div>
-            <div action-show-element-details="wlosy" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-wlosy"></div>
-              <div class="sidebar-element__item-text">Włosy</div>
-            </div>
-            <div action-show-element-details="serdecznosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-serdecznosc"></div>
-              <div class="sidebar-element__item-text">Serdeczność Czułość</div>
-            </div>
-            <div action-show-element-details="energicznosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-energicznosc"></div>
-              <div class="sidebar-element__item-text">EnergicznośĆ Zgrabność</div>
-            </div>
-            <div action-show-element-details="mlodosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-mlodosc"></div>
-              <div class="sidebar-element__item-text">Młodość<br>Niewinność</div>
-            </div>
-            <div action-show-element-details="uleglosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-uleglosc"></div>
-              <div class="sidebar-element__item-text">uległość<br>wrażliwość</div>
-            </div>
-            <div action-show-element-details="delikatnosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-delikatnosc"></div>
-              <div class="sidebar-element__item-text">delikatność<br>kruchość</div>
+            <div class="about__start-button-holder">
+              <div action-create-totem="true" class="bem-button is-big-in-description">STWÓRZ SWÓJ TOTEM</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="right-sidebar-holder">
-        <div class="sidebar is-right">
-          <div class="sidebar__title">
-            <div class="sidebar__title-text">Mężczyzna</div>
-          </div>
-          <div class="sidebar-elements w-clearfix">
-            <div action-show-element-details="krew" class="sidebar-element__item">
-              <div class="sidebar-element__item-image"></div>
-              <div class="sidebar-element__item-text">Krew</div>
+      <div tab-id="create-totem" class="create-totem is-hidden w-clearfix">
+        <div class="left-sidebar-holder">
+          <div class="sidebar">
+            <div class="sidebar__title">
+              <div class="sidebar__title-text">Kobieta</div>
             </div>
-            <div action-show-element-details="pot" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-pot"></div>
-              <div class="sidebar-element__item-text">Pot</div>
-            </div>
-            <div action-show-element-details="starosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-starosc"></div>
-              <div class="sidebar-element__item-text">starość zahartowanie</div>
-            </div>
-            <div action-show-element-details="twardosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-twardosc"></div>
-              <div class="sidebar-element__item-text">Twardość<br>Stanowczość</div>
-            </div>
-            <div action-show-element-details="szorstkosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-szorstkosc"></div>
-              <div class="sidebar-element__item-text">Szorstkość<br>Antypatyczność</div>
-            </div>
-            <div action-show-element-details="konfliktowosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-konfliktowosc"></div>
-              <div class="sidebar-element__item-text">konfliktowość<br>Agresywność</div>
-            </div>
-            <div action-show-element-details="obojetnosc" class="sidebar-element__item">
-              <div class="sidebar-element__item-image for-obojetnosc"></div>
-              <div class="sidebar-element__item-text">Obojętność<br>Zdystansowanie</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-content">
-        <div class="totem">
-          <div class="totem__inner">
-            <div class="totem__stick"><img src="images/totem1.png" srcset="images/totem1-p-500.png 500w, images/totem1.png 685w" sizes="(max-width: 685px) 100vw, 685px" class="totem-stick-image">
-              <div js-selector="totem__elements" class="totem__elements">
-                <div totem-elm-name="obojetnosc" class="totem__element is-obojetnosc is-hidden"></div>
-                <div totem-elm-name="krew" class="totem__element is-krew is-hidden"></div>
-                <div totem-elm-name="pot" class="totem__element is-pot is-hidden"></div>
-                <div totem-elm-name="twardosc" class="totem__element is-twardosc is-hidden"></div>
-                <div totem-elm-name="szorstkosc" class="totem__element is-szorstkosc is-hidden"></div>
-                <div totem-elm-name="starosc" class="totem__element is-starosc is-hidden"></div>
-                <div totem-elm-name="konfliktowosc" class="totem__element is-konfliktowosc is-hidden"></div>
-                <div totem-elm-name="serdecznosc" class="totem__element s-serdecznosc is-hidden"></div>
-                <div totem-elm-name="energicznosc" class="totem__element is-energicznosc is-hidden"></div>
-                <div totem-elm-name="mlodosc" class="totem__element is-mlodosc is-hidden"></div>
-                <div totem-elm-name="uleglosc" class="totem__element is-uleglosc is-hidden"></div>
-                <div totem-elm-name="lzy" class="totem__element is-lzy is-hidden"></div>
-                <div totem-elm-name="wlosy" class="totem__element is-wlosy is-hidden"></div>
-                <div totem-elm-name="delikatnosc" class="totem__element is-delikatnosc is-hidden"></div>
+            <div class="sidebar-elements w-clearfix">
+              <div action-show-element-details="lzy" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-lzy"></div>
+                <div class="sidebar-element__item-text">Łzy</div>
+              </div>
+              <div action-show-element-details="wlosy" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-wlosy"></div>
+                <div class="sidebar-element__item-text">Włosy</div>
+              </div>
+              <div action-show-element-details="serdecznosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-serdecznosc"></div>
+                <div class="sidebar-element__item-text">Serdeczność Czułość</div>
+              </div>
+              <div action-show-element-details="energicznosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-energicznosc"></div>
+                <div class="sidebar-element__item-text">EnergicznośĆ Zgrabność</div>
+              </div>
+              <div action-show-element-details="mlodosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-mlodosc"></div>
+                <div class="sidebar-element__item-text">Młodość<br>Niewinność</div>
+              </div>
+              <div action-show-element-details="uleglosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-uleglosc"></div>
+                <div class="sidebar-element__item-text">uległość<br>wrażliwość</div>
+              </div>
+              <div action-show-element-details="delikatnosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-delikatnosc"></div>
+                <div class="sidebar-element__item-text">delikatność<br>kruchość</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer">
-          <div class="footer__signature">Web design and code donated by <a href="http://maciejsawicki.com" class="footer__designer-link">MaciejSawicki.com</a></div>
+        <div class="right-sidebar-holder">
+          <div class="sidebar is-right">
+            <div class="sidebar__title">
+              <div class="sidebar__title-text">Mężczyzna</div>
+            </div>
+            <div class="sidebar-elements w-clearfix">
+              <div action-show-element-details="krew" class="sidebar-element__item">
+                <div class="sidebar-element__item-image"></div>
+                <div class="sidebar-element__item-text">Krew</div>
+              </div>
+              <div action-show-element-details="pot" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-pot"></div>
+                <div class="sidebar-element__item-text">Pot</div>
+              </div>
+              <div action-show-element-details="starosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-starosc"></div>
+                <div class="sidebar-element__item-text">starość zahartowanie</div>
+              </div>
+              <div action-show-element-details="twardosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-twardosc"></div>
+                <div class="sidebar-element__item-text">Twardość<br>Stanowczość</div>
+              </div>
+              <div action-show-element-details="szorstkosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-szorstkosc"></div>
+                <div class="sidebar-element__item-text">Szorstkość<br>Antypatyczność</div>
+              </div>
+              <div action-show-element-details="konfliktowosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-konfliktowosc"></div>
+                <div class="sidebar-element__item-text">konfliktowość<br>Agresywność</div>
+              </div>
+              <div action-show-element-details="obojetnosc" class="sidebar-element__item">
+                <div class="sidebar-element__item-image for-obojetnosc"></div>
+                <div class="sidebar-element__item-text">Obojętność<br>Zdystansowanie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="totem">
+            <div class="totem__inner">
+              <div class="totem__stick"><img src="images/totem1.png" srcset="images/totem1-p-500.png 500w, images/totem1.png 685w" sizes="100vw" class="totem-stick-image">
+                <div js-selector="totem__elements" class="totem__elements">
+                  <div totem-elm-name="obojetnosc" class="totem__element is-obojetnosc is-hidden"></div>
+                  <div totem-elm-name="krew" class="totem__element is-krew is-hidden"></div>
+                  <div totem-elm-name="pot" class="totem__element is-pot is-hidden"></div>
+                  <div totem-elm-name="twardosc" class="totem__element is-twardosc is-hidden"></div>
+                  <div totem-elm-name="szorstkosc" class="totem__element is-szorstkosc is-hidden"></div>
+                  <div totem-elm-name="starosc" class="totem__element is-starosc is-hidden"></div>
+                  <div totem-elm-name="konfliktowosc" class="totem__element is-konfliktowosc is-hidden"></div>
+                  <div totem-elm-name="serdecznosc" class="totem__element s-serdecznosc is-hidden"></div>
+                  <div totem-elm-name="energicznosc" class="totem__element is-energicznosc is-hidden"></div>
+                  <div totem-elm-name="mlodosc" class="totem__element is-mlodosc is-hidden"></div>
+                  <div totem-elm-name="uleglosc" class="totem__element is-uleglosc is-hidden"></div>
+                  <div totem-elm-name="lzy" class="totem__element is-lzy is-hidden"></div>
+                  <div totem-elm-name="wlosy" class="totem__element is-wlosy is-hidden"></div>
+                  <div totem-elm-name="delikatnosc" class="totem__element is-delikatnosc is-hidden"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer__signature">Web design and code donated by <a href="http://maciejsawicki.com" class="footer__designer-link">MaciejSawicki.com</a></div>
+          </div>
         </div>
       </div>
     </div>

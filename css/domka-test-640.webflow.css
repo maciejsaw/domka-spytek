@@ -1,0 +1,237 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3em;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.body-wrapper {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 23px;
+  margin-left: auto;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: #333;
+  text-align: left;
+}
+
+.logo__subtext {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo__header {
+  color: #f499b0;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.dom-body {
+  height: 100%;
+}
+
+.body-wrapper__inner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  min-height: 100%;
+}
+
+.dom-content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.projects-list {
+  max-width: 640px;
+  padding: 39px 16px;
+}
+
+.project-card {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 19px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #fff;
+  box-shadow: 0 6px 15px 1px rgba(0, 0, 0, .01);
+}
+
+.project-card:active {
+  background-color: #f6f6f6;
+  opacity: 0.94;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
+}
+
+.contact-box__item {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__header {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__inner {
+  margin-bottom: 36px;
+  padding: 19px 28px;
+}
+
+.project-card__header {
+  margin-top: -8px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.project-card__short-text {
+  line-height: 1.33em;
+}
+
+.project-card__right-side {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 23px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.project-card__cover {
+  width: 150px;
+  min-height: 150px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-image: url('../images/_DSC0819-www-cover.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.project-card__cover.is-behance {
+  background-image: url('../images/iWd3byBLJ142Vxd7Vf9B7w-BehanceLogoSquare-1.png');
+}
+
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section.is-gray {
+  background-color: #f4f3f3;
+}
+
+.project-card__call-to-action {
+  margin-top: 18px;
+  color: #f49999;
+  font-size: 13px;
+  line-height: 1.33em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 479px) {
+  .logo {
+    text-align: center;
+  }
+  .projects-list {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+  .project-card__short-text {
+    font-size: 13px;
+  }
+  .project-card__right-side {
+    padding: 17px 16px 16px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+  }
+  .project-card__cover {
+    width: 100px;
+  }
+  .project-card__call-to-action {
+    font-size: 13px;
+  }
+}
+
