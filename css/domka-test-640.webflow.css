@@ -90,8 +90,9 @@ a {
 }
 
 .projects-list {
-  max-width: 640px;
-  padding: 39px 16px;
+  max-width: 520px;
+  padding-top: 39px;
+  padding-bottom: 23px;
 }
 
 .project-card {
@@ -106,7 +107,6 @@ a {
   -ms-flex-align: stretch;
   align-items: stretch;
   background-color: #fff;
-  box-shadow: 0 6px 15px 1px rgba(0, 0, 0, .01);
 }
 
 .project-card:active {
@@ -139,6 +139,7 @@ a {
 
 .project-card__header {
   margin-top: -8px;
+  margin-bottom: 6px;
   font-style: italic;
   font-weight: 800;
   letter-spacing: -0.01em;
@@ -153,16 +154,16 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 23px 20px;
+  padding: 7px 20px 23px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -176,7 +177,7 @@ a {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  background-image: url('../images/_DSC0819-www-cover.jpg');
+  background-image: url('../images/crossxtoys-cover.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -196,16 +197,12 @@ a {
   justify-content: center;
 }
 
-.section.is-gray {
-  background-color: #f4f3f3;
-}
-
 .project-card__call-to-action {
-  margin-top: 18px;
-  color: #f49999;
+  margin-top: 5px;
+  color: #727272;
   font-size: 13px;
   line-height: 1.33em;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
@@ -221,7 +218,9 @@ a {
     font-size: 13px;
   }
   .project-card__right-side {
-    padding: 17px 16px 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
