@@ -453,6 +453,7 @@ a {
 .bem-button.is-big-in-description {
   padding: 16px;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .modal-buttons__holder {
