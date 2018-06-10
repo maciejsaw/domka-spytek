@@ -187,6 +187,10 @@ a {
   background-image: url('../images/iWd3byBLJ142Vxd7Vf9B7w-BehanceLogoSquare-1.png');
 }
 
+.project-card__cover.is-bialowieza {
+  background-image: url('../images/8ef8a254396543.Y3JvcCw2MTgsNDgzLDI5OSw1OTY.jpg');
+}
+
 .section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -230,6 +234,59 @@ a {
   border-bottom-color: #e6e6e6;
   color: #2e2e2e;
   font-weight: 600;
+}
+
+.project-header {
+  padding-right: 20px;
+  padding-bottom: 75px;
+  padding-left: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-heading__title-text {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 103px;
+  line-height: 0.8em;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.project-description__inner {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-description__image {
+  display: block;
+  max-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-description__image-holder {
+  margin-bottom: 80px;
+}
+
+.project-description__image-caption {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+}
+
+.project-heading__subtext {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 @media (max-width: 767px) {
@@ -281,6 +338,16 @@ a {
   }
   .language-switcher__tab-holder {
     font-size: 12px;
+  }
+  .project-header {
+    padding-bottom: 40px;
+  }
+  .project-heading__title-text {
+    font-size: 41px;
+  }
+  .project-heading__subtext {
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 }
 
