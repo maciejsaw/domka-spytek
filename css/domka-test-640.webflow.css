@@ -76,7 +76,7 @@ a {
   min-height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 35px;
+  padding-top: 51px;
   padding-bottom: 35px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -143,6 +143,7 @@ a {
   font-style: italic;
   font-weight: 800;
   letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .project-card__short-text {
@@ -206,6 +207,44 @@ a {
   letter-spacing: -0.01em;
 }
 
+.language-switcher {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-right: 11px;
+}
+
+.language-switcher__tab-holder {
+  padding: 17px 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.lanuage-switcher__tab-button {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  color: #979797;
+}
+
+.lanuage-switcher__tab-button.is-current {
+  border-bottom-color: #e6e6e6;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .dom-content-wrapper {
+    padding-top: 72px;
+  }
+  .language-switcher {
+    padding-right: 4px;
+  }
+  .language-switcher__tab-holder {
+    padding: 9px 7px;
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 479px) {
   .logo {
     text-align: center;
@@ -231,6 +270,17 @@ a {
   }
   .project-card__call-to-action {
     font-size: 13px;
+  }
+  .language-switcher {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding-right: 0px;
+    padding-left: 9px;
+    text-align: center;
+  }
+  .language-switcher__tab-holder {
+    font-size: 12px;
   }
 }
 
